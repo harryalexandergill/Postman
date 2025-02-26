@@ -37,7 +37,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{baseURL}}/status"
+				"url": "{{baseUrl}}/status"
 			},
 			"response": []
 		},
@@ -78,7 +78,7 @@
 						}
 					}
 				},
-				"url": "{{baseURL}}/api-clients"
+				"url": "{{baseUrl}}/api-clients"
 			},
 			"response": []
 		},
@@ -122,9 +122,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/books?type=non-fiction",
+					"raw": "{{baseUrl}}/books?type=non-fiction",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"books"
@@ -132,8 +132,7 @@
 					"query": [
 						{
 							"key": "type",
-							"value": "non-fiction",
-							"type": "text"
+							"value": "non-fiction"
 						},
 						{
 							"key": "limit",
@@ -171,9 +170,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/books/:bookid",
+					"raw": "{{baseUrl}}/books/:bookid",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"books",
@@ -236,7 +235,7 @@
 						}
 					}
 				},
-				"url": "{{baseURL}}/orders"
+				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
 		},
@@ -270,7 +269,7 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "{{baseURL}}/orders"
+				"url": "{{baseUrl}}/orders"
 			},
 			"response": []
 		},
@@ -305,9 +304,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/orders/:orderid",
+					"raw": "{{baseUrl}}/orders/:orderid",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"orders",
@@ -363,9 +362,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{baseURL}}/orders/:orderid",
+					"raw": "{{baseUrl}}/orders/:orderid",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"orders",
@@ -412,9 +411,9 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/orders/:orderid",
+					"raw": "{{baseUrl}}/orders/:orderid",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"orders",
@@ -435,7 +434,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "dde74cb6-94eb-4d34-a201-41ae54990261",
+				"id": "6e6b8c12-5b1a-455d-900b-8a5154f1668c",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -446,7 +445,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fcfc82d4-bc67-43ab-bb23-c07b1abfcda0",
+				"id": "caa0a0c7-0bd5-40ee-8428-b120d6eb4fa3",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -457,7 +456,7 @@
 	],
 	"variable": [
 		{
-			"key": "baseURL",
+			"key": "baseUrl",
 			"value": "https://simple-books-api.glitch.me",
 			"type": "default"
 		},
